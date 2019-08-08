@@ -1,0 +1,29 @@
+{
+  "name": "ted-ed-api",
+  "version": "1.0.0",
+  "description": "API to retrieve lessons from Ted-Ed. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msradam/ted-ed-api.git"
+  },
+  "keywords": [
+    "education",
+    "ted",
+    "api"
+  ],
+  "author": "Adam Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msradam/ted-ed-api/issues"
+  },
+  "homepage": "https://github.com/msradam/ted-ed-api#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1"
+  }
+}
