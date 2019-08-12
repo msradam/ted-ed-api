@@ -1,0 +1,16 @@
+version: '3'
+#### Server
+services:
+  server:
+    build: .
+    expose:
+      - ${APP_SERVER_PORT}
+    environment:
+      API_HOST: ${API_HOST}
+      APP_SERVER_PORT: ${APP_SERVER_PORT}
+    ports:
+      - ${APP_SERVER_PORT}:${APP_SERVER_PORT}
+    volumes:
+      - .:/srv/app/ted-ed-api
+      # - ./server/node_modules
+    command: yarn dev
